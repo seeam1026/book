@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/font/Roboto/Roboto-Italic.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <title>my project</title>
+</head>
+<body id="body">
+    <!-- phần header -->
+    <header class="header" id="header-app">
+        <div class="grid header-nav">
+            <img src="./assets/img/22050431_THE.jpg" alt="">
+            <div class="nav">
+                <li class="nav-items">
+                    <a href="" class="decoration white-color-text">Home
+                        <i class="fa-solid fa-house-user"></i>
+                    </a>
+                    <span class="nav-items-border"></span>
+                </li>
+                <li class="nav-items">
+                    <a href="#buy-something" class="decoration white-color-text">Buy something
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span class="nav-items-border"></span>
+                </li>
+                <li class="nav-items">
+                    <a href="#chuyen-code" class="decoration white-color-text">Some quotes
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                    <span class="nav-items-border"></span>
+                </li>
+                <li class="nav-items">
+                    <a href="#gift" class="decoration white-color-text">Gift (0đ)
+                        <i class="fa-brands fa-soundcloud"></i>
+                    </a>
+                    <span class="nav-items-border"></span>
+                </li>
+                <li class="nav-items">
+                    <a href="#nham-nhi" class="decoration white-color-text">Stuff
+                        <i class="fa-solid fa-bicycle"></i>
+                    </a>
+                    <span class="nav-items-border"></span>
+                </li>
+            </div>
+            <div class="nav-search">
+                <i class="fa-solid fa-magnifying-glass decoration white-color-text" id="icon-search"></i>
+                <a href="https://www.microsoft.com/vi-vn/" target="_blank" class="decoration">
+                    <button class="btn-down-app">
+                        Download app
+                        <i class="fa-solid fa-cloud-arrow-down icon-download"></i>
+                    </button>
+                </a> 
+            </div>
+        </div>
+        <div class="modal-overlay" id="js-modal">
+            <div class="modal-search grid" id="js-modal-search">
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="input-search" placeholder="search" value>
+                </button>
+            </div>
+        </div>
+        <!-- mode light dark -->
+        <button onclick="changeDarklightmode();" class="btn btn-mode">
+            <i class="fa-solid fa-sun icon-light-mode"></i>
+            <i class="fa-solid fa-moon icon-dark-mode"></i>
+        </button>
+    </header>
+    <!-- phần container -->
+    <div class="container">
+    <!-- <img class="img" src="./assets/img/22050431_THE.jpg" alt=""> -->
+    <div class="slideshow">
+        <!-- <marquee class="slideshow-text" behavior="" direction="left">Hurry up!</marquee> -->
+        <span class="slideshow-text" contenteditable="true">Hurry up!</span>
+    </div>
+    <div class="container-content">
+        <div class="content-dashboard grid">
+            <div class="flex-column">
+                <!-- phần mua sách -->
+                <div class="content-dashboard-items content-buy-book" id="buy-something">
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/91/03/79/c72757605b53886c7509d548513dcd00.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">The Snowball: Warren Buffett And The Business Of Life</span>
+                            <div class="book-price">
+                              <span class="book-price-text">20</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/24/e4/4d/40a7173ed22959abd4a5a1314235f5a3.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">A Brief History of Humankind (Paperback)</span>
+                            <div class="book-price">
+                              <span class="book-price-text">10</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/05/a9/0e/fa26cefb7aa153467118665da97e90ab.png.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">Thinking , Fast and Slow</span>
+                            <div class="book-price">
+                              <span class="book-price-text">10</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/f1/89/29/9cde5364cb2a30c2f0532ae8778e0538.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">The Black Swan: Second Edition</span>
+                            <div class="book-price">
+                              <span class="book-price-text">20</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/83/e8/74/2ddcc7890c5e95664ac36afef14d586c.png.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">DK The Facts Visually Explained: How Money Works</span>
+                            <div class="book-price">
+                              <span class="book-price-text">20</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/media/catalog/product/4/1/41qc2yrplrl-_sx322_bo1-204-203-200_.u2469.d20161216.t154630.530749.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">Warren Buffett Management Secrets</span>
+                            <div class="book-price">
+                              <span class="book-price-text">15</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/c5/d1/9e/ebf77fa9630fde164e5c56d2cbbcd687.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">Blockchain Revolution</span>
+                            <div class="book-price">
+                              <span class="book-price-text">20</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                    <a href="" class="item-book decoration black-color-text">
+                        <div class="book-img">
+                            <div class="book-discount">-19%</div>
+                            <img class="image-book" src="https://salt.tikicdn.com/cache/750x750/ts/product/f2/92/51/b0ddcd5d61dda40581b4ff47da433549.jpg.webp" alt="">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-name">The Personal MBA 10th Anniversary Edition</span>
+                            <div class="book-price">
+                              <span class="book-price-text">15</span>
+                              <span class="book-price-sub-text">$</span>
+                            </div>
+                            <button class="btn-buy-book">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Buy
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <!-- <a href="https://tiki.vn/dien-thoai-may-tinh-bang/c1789" target="_blank" id="buy-something" class="content-dashboard-items decoration">
+                    <img class="img-item" src="./assets/img/1B36D550-4F8B-48C6-9BE5-9DB56C446F27.png" alt="">
+                    <div class="col-2">
+                        <span class="subject">Buy Something</span>
+                       <h2 class="color-text header-text">
+                        Đồ công nghệ
+                       </h2>
+                        <span class="color-text text-content">
+                        Mô tả chi tiết thông tin sản phẩm:
+                        Mới đây, một aircraft đã rơi ở miền trung Nepal, khiến ít nhất 68 người thiệt mạng. 
+                        Aviation incident này là vụ rơi máy bay chết chóc nhất ở Nepal trong hơn 30 năm.
+                        Trên máy bay có tổng cộng 72 người, bao gồm 68 hành khách và 4 crew member.
+                        </span>
+                    </div>
+                </a> -->
+
+                <div class="content-dashboard-items dashboard-items--row-2" id="chuyen-code">
+                    <a href="" class="decoration items--row-2__link">
+                        <div class="items-post-link">
+                            <span class="subject">quotes</span>
+                            <h2 class="color-text header-text">QUOTES FOR WHEN YOU’RE FEELING ANXIOUS</h2>
+                            <span class="color-text text-content">“Your solitude will be a support and a home for you, even in the midst of very unfamiliar circumstances, and from it, you will find all your paths.”
+                            </span>
+                        </div>
+                        <img class="image-col-2 image-col" src="https://imglf4.lf127.net/img/5cba1965282919b6/RGozMW1pQXBVWk9kMUZSVElHb081dUN4R0NPMk5GMVZJQnRPYUplTzhYWT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0" alt="">
+                    </a>
+                    <a href="" class="decoration items--row-2__link">
+                        <div class="items-post-link">
+                            <span class="subject">quotes</span>
+                            <h2 class="color-text header-text">QUOTES FOR WHEN YOU’RE FEELING ANXIOUS</h2>
+                            <span class="color-text text-content">“Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind.”
+                            </span>
+                        </div>
+                        <img class="image-col-2 image-col" src="https://imglf3.lf127.net/img/b3a5516b072dccd7/RGozMW1pQXBVWk5UdWYwcDMySFZoUHhXbFErZkJjb1k.png?imageView&thumbnail=500x0&quality=96&stripmeta=0" alt="">
+                    </a>
+                    <a href="" class="decoration items--row-2__link">
+                        <div class="items-post-link">
+                            <span class="subject">quotes</span>
+                            <h2 class="color-text header-text">QUOTES FOR WHEN YOU’RE FEELING ANXIOUS</h2>
+                            <span class="color-text text-content">“Blessed are those who do not fear solitude, who are not afraid of their own company, who are not always desperately looking for something to do, something to amuse themselves with, something to judge.”
+                            </span>
+                        </div>
+                        <img class="image-col-2 image-col" src="https://imglf6.lf127.net/img/84795bcfa286f4ae/RGozMW1pQXBVWk9jMUN4ZUVzV0tOMVBkdXlGQzhrMkg.png?imageView&thumbnail=500x0&quality=96&stripmeta=0" alt="">
+                    </a>
+                    
+                </div>
+                <div class="content-dashboard-items dashboard-items--row-3" id="nham-nhi">
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Paint</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/blog-1.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Paint</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/blog-2.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Paint</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/blog-3.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Zoro</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/port-5.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Cyber</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/port-2.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Space</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/port-6.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Vacant Ground</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/port-4.png" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Forest</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/port-3.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" items--row-3__link">
+                        <div class="items-post-link items-post-link--row-3">
+                            <!-- <span class="subject">quotes</span> -->
+                            <h2 class="color-text header-text">Paint</h2>
+                            <!-- <span class="color-text text-content">Gần đây, bộ phim "The Glory" đang trend trên khắp các mạng xã hội. 
+                                The Glory là một trong những online movie Hàn Quốc mới nhất trên Netflix. 
+                                Bộ phim psychological horror này tập trung vào nạn bắt nạt ở trường học.
+                            </span> -->
+                        </div>
+                        <div class="items--row-3__bg">
+                            <img class="image-col-3 image-col" src="https://triplet511.github.io/Portfolio_Clone/blog-1.jpg" alt="">
+                            <div class="image-overlay">
+                            </div>
+                            <a href="#" class="decoration white-color-text image-overlay-text">
+                                <i class="fa-brands fa-searchengin"></i>
+                                <span>Free download</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- phần footer -->
+    <div class="footer">
+        <div class="footer-social">
+            <span class="black-color-text">Copyright © 2023 By Seeam</span>
+            <a href="#" class="decoration border-social">
+                <i class="ti-facebook icon-social"></i>
+            </a>
+            <a href="#" class="decoration border-social">
+                <i class="ti-youtube icon-social"></i>
+            </a>
+            <a href="#" class="decoration border-social">
+                <i class="ti-android icon-social"></i>
+            </a>
+        </div>
+        <button class="btn-support pull-right" id="js-btn">
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <span onclick="windowscroll0()">Chat</span>
+        </button>
+    </div>
+    <script>
+        var headerApp = document.getElementById("header-app")
+        var btnSupport = document.getElementById('js-btn')
+
+        window.onscroll = function () {scrollFunction()}
+        function scrollFunction () {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                headerApp.style.backgroundColor = "var(--purple-color)";
+                btnSupport.style.display = "block"
+            }
+            else {
+                headerApp.style.backgroundColor = "transparent";
+                btnSupport.style.display = "none"
+            }
+        }
+
+        // mở modal search
+
+        var iconSearch = document.getElementById('icon-search')
+        var modalSearch = document.getElementById('js-modal')
+        var closeSearch = document.getElementById('js-modal-search')
+        var defaultModal = document.querySelector('.btn')
+
+        iconSearch.onclick = function openModal () {
+            modalSearch.style.display = "block";
+        }
+
+        closeSearch.onclick = function closeModal (event) {
+            modalSearch.style.display = "none";
+
+        }
+        // click vào button btn input thì ko bị close modal do ảnh hưởng từ thẻ cha modalSearch
+        defaultModal.onclick = function () {
+            event.stopPropagation()
+        }
+        // change dark white mode
+        
+        var colorTexts = document.querySelectorAll('.color-text')
+        var iconDarkmode = document.querySelector('.icon-dark-mode')
+        var iconLightmode = document.querySelector('.icon-light-mode')
+        var borderBooks = document.querySelectorAll('.item-book')
+        const imageQuotesStuffs = document.querySelectorAll('.image-col')
+        
+        function changeDarklightmode () {
+            document.body.classList.toggle('dark-mode');
+            for (colorText of colorTexts) {
+                colorText.classList.toggle('white-color-text')
+            }
+            iconDarkmode.classList.toggle('icon-dark-mode-after');
+            iconLightmode.classList.toggle('icon-light-mode-after');
+            for (borderBook of borderBooks) {
+                borderBook.classList.toggle('border-book-color');
+                borderBook.style.backgroundColor = "#fff"
+            }
+            for (imageQuotesStuff of imageQuotesStuffs) {
+                imageQuotesStuff.classList.toggle('img-col')
+            }
+        }
+
+        function windowscroll0 () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+</html>
